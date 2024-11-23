@@ -1,3 +1,4 @@
+import math
 import tkinter as tk
 from fractions import Fraction
 from tkinter import *
@@ -97,22 +98,6 @@ ttk.Button(tab1, text='Clear', command=clear_inputs).grid(row=4, column=4, padx=
 
 """TAB2"""
 
-"""Zadanie domowe- układy współrzędnych (2 pkt)"""
-
-# print("Podaj współrzędne kartezjańskie x,y,z")
-#
-# valueX = int(input("Podaj pierwszą liczbe: "))
-# print("valueX",valueX ** 2)
-# valueY = int(input("Podaj drugą liczbe: "))
-# print("valueY",valueY ** 2)
-# valueZ = int(input("Podaj trzecią liczbe: "))
-# print("valueZ",valueZ ** 2)
-# summary = (int(((valueX ** 2) + (valueY ** 2) + (valueZ ** 2))*(1/2)))
-#
-# print("Współrzędne w układzie cylindrycznym: ", summary)
-
-import math
-
 valueCircle_let = StringVar()
 
 #Imput A
@@ -150,3 +135,17 @@ ttk.Button(tab2, text='Calculate', command=submitTab2).grid(row=2,column=3, **pa
 ttk.Button(tab2, text='Clear', command=clear_inputs_tab2).grid(row=2, column=4, padx=10)
 
 root.mainloop()
+
+# """Zadanie domowe- układy współrzędnych (2 pkt)"""
+
+# print("Podaj współrzędne kartezjańskie x,y,z")
+#
+# valueX = int(input("Podaj pierwszą liczbe: "))
+# print("valueX",valueX ** 2)
+# valueY = int(input("Podaj drugą liczbe: "))
+# print("valueY",valueY ** 2)
+# valueZ = int(input("Podaj trzecią liczbe: "))
+# print("valueZ",valueZ ** 2)
+# summary = (int(((valueX ** 2) + (valueY ** 2) + (valueZ ** 2))*(1/2)))
+#
+# print("Współrzędne w układzie cylindrycznym: ", summary)
