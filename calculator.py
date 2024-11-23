@@ -5,15 +5,16 @@ from tkinter import ttk, messagebox
 from tkinter import PhotoImage
 
 root = tk.Tk()
-root.title("Calculator")
+root.title("Calculators")
 tabControl = ttk.Notebook(root)
 root.resizable(False, False)
 
 tab1 = ttk.Frame(tabControl)
 tab2 = ttk.Frame(tabControl)
 
+"""TAB1"""
 tabControl.add(tab1, text='Równania kwadratowe', padding="5")
-tabControl.add(tab2, text='Tab 2', padding="5")
+tabControl.add(tab2, text='Pole i obwód koła', padding="5")
 tabControl.pack(expand = 1, fill="both")
 tabControl.columnconfigure(3, weight=2)
 imageMath = PhotoImage(file="mathImg1.png")
@@ -25,8 +26,6 @@ valueC_let = StringVar()
 
 #UI ustawienia
 paddings = {'padx':10, 'pady': 10}
-# tab1.columnconfigure(0,weight=3)
-# tab1.columnconfigure(1,weight=1)
 
 #Imput A
 inputA = ttk.Entry(tab1, width=7, textvariable=valueA_let)
@@ -86,10 +85,69 @@ def submit():
         # Lejbelka z wynikiem
         print(f"valueA - {valueA} valueB - {valueB} valueC - {valueC} delta - {delta} deltaElement - {deltaElement}")
         del valueA, valueB, valueC, delta, deltaElement
-        return sume.config(text=f"SUMA X1: {x1} X2: {x2}")
+        return sume.config(text=f"SUMA: X1: {x1} X2: {x2}")
 
-#Przycisk calculate
+#Suma
+sume = ttk.Label(tab1, text="SUMA:", font=('calibe', 15, 'bold'))
+sume.grid(row=4, column=1,columnspan=2, padx=10)
+
+#Przycisk calculate i clear
 ttk.Button(tab1, text='Calculate', command=submit).grid(row=4,column=3, **paddings)
 ttk.Button(tab1, text='Clear', command=clear_inputs).grid(row=4, column=4, padx=10)
+
+"""TAB2"""
+
+"""Zadanie domowe- układy współrzędnych (2 pkt)"""
+
+# print("Podaj współrzędne kartezjańskie x,y,z")
+#
+# valueX = int(input("Podaj pierwszą liczbe: "))
+# print("valueX",valueX ** 2)
+# valueY = int(input("Podaj drugą liczbe: "))
+# print("valueY",valueY ** 2)
+# valueZ = int(input("Podaj trzecią liczbe: "))
+# print("valueZ",valueZ ** 2)
+# summary = (int(((valueX ** 2) + (valueY ** 2) + (valueZ ** 2))*(1/2)))
+#
+# print("Współrzędne w układzie cylindrycznym: ", summary)
+
+"""Zadanie 4"""
+import math
+
+valueCircle_let = StringVar()
+
+#Imput A
+inputRadius = ttk.Entry(tab2, width=7, textvariable=valueCircle_let)
+inputRadius.grid(column=2, row=1)
+#Label
+ttk.Label(tab2, text="Podaj promień koła w centymetrach").grid(row=1, column=1, **paddings)
+
+#Suma
+score = ttk.Label(tab2, font=('calibe', 15, 'bold'))
+score.grid(row=4, column=1,columnspan=2, rowspan=2, padx=10)
+
+def clear_inputs_tab2():
+    inputRadius.delete(0, END)
+    score.config(text="")
+
+def submitTab2():
+    valueCircle = int(valueCircle_let.get())
+    if valueCircle < 0:
+        messageBoxReturnTab2 = messagebox.askretrycancel("Nieprawidłowa wartość", "Wartość nie moze byc ujemna!")
+        if messageBoxReturnTab2 is False:
+            quit()
+        else:
+            clear_inputs_tab2()
+        # print("Wartość nie moze byc ujemna!")
+        # radiusValue = int(input("Podaj promień koła w centymetrach: "))
+    if valueCircle >= 0:
+        circleField = round(math.pi * (valueCircle ** 2),2)
+        circuitCycle = round(2 * math.pi * valueCircle,2)
+        del valueCircle
+        return score.config(text=f"Pole: {circleField} \nObwód: {circuitCycle}")
+
+#Przycisk calculate i clear
+ttk.Button(tab2, text='Calculate', command=submitTab2).grid(row=2,column=3, **paddings)
+ttk.Button(tab2, text='Clear', command=clear_inputs_tab2).grid(row=2, column=4, padx=10)
 
 root.mainloop()
