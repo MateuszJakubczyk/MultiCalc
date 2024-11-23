@@ -111,7 +111,6 @@ ttk.Button(tab1, text='Clear', command=clear_inputs).grid(row=4, column=4, padx=
 #
 # print("Współrzędne w układzie cylindrycznym: ", summary)
 
-"""Zadanie 4"""
 import math
 
 valueCircle_let = StringVar()
@@ -133,7 +132,7 @@ def clear_inputs_tab2():
 def submitTab2():
     valueCircle = int(valueCircle_let.get())
     if valueCircle < 0:
-        messageBoxReturnTab2 = messagebox.askretrycancel("Nieprawidłowa wartość", "Wartość nie modaze byc ujemna!")
+        messageBoxReturnTab2 = messagebox.askretrycancel("Nieprawidłowa wartość", "Wartość nie może byc ujemna!")
         if messageBoxReturnTab2 is False:
             quit()
         else:
