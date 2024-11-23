@@ -133,7 +133,7 @@ def clear_inputs_tab2():
 def submitTab2():
     valueCircle = int(valueCircle_let.get())
     if valueCircle < 0:
-        messageBoxReturnTab2 = messagebox.askretrycancel("Nieprawidłowa wartość", "Wartość nie moze byc ujemna!")
+        messageBoxReturnTab2 = messagebox.askretrycancel("Nieprawidłowa wartość", "Wartość nie modze byc ujemna!")
         if messageBoxReturnTab2 is False:
             quit()
         else:
