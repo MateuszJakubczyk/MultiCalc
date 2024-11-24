@@ -7,7 +7,7 @@ from tkinter import ttk, messagebox
 from tkinter import PhotoImage
 
 root = tk.Tk()
-root.title("Calculators")
+root.title("MultiCalc")
 tabControl = ttk.Notebook(root)
 root.resizable(False, False)
 
