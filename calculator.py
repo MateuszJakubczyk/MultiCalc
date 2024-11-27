@@ -150,3 +150,6 @@ root.mainloop()
 # summary = (int(((valueX ** 2) + (valueY ** 2) + (valueZ ** 2))*(1/2)))
 #
 # print("Współrzędne w układzie cylindrycznym: ", summary)
+"""Dodaj kalkulator do szacowania trójpunktowego pracochłonności"""
+"""Dodaj kalkulator do szacowania pracochłonności na podstawie proporcji"""
+
