@@ -1,72 +1,71 @@
 # MultiCalc
 
-MultiCalc Starter is a simple, user-friendly calculator app designed to tackle two essential mathematical problems with ease. Perfect for students, professionals, and anyone who needs quick, accurate calculations.
+**MultiCalc** is a versatile and efficient calculator application that handles various mathematical operations. You can calculate, for example, the area and circumference of a circle or quadratic equation
 
-## Description
+Whether you need simple arithmetic or more advanced calculations, MultiCalc is designed to meet your needs.
 
-Key Features:
+## Features
 
-**Quadratic Equation Solver:**
+- Perform the basic area and circumference of a circle based on the radius
+- Calculate advanced mathematical equation (quadratic equation on three specific values with calculating delta)
 
-* Input coefficients (a, b, c) to solve quadratic equations of the form 𝑎𝑥2 + 𝑏𝑥 + 𝑐 = 0
-* Provides real or complex solutions, step-by-step.
+## Installation
 
-**Circle Calculator:**
+To use MultiCalc, clone the repository and set up the app on your local machine.
 
-* Calculate the area and circumference of a circle.
-* Simply input the radius to get instant results.
+### 1. Clone the repository
 
-## Getting Started
+```bash
+git clone git@github.com:MateuszJakubczyk/MultiCalc.git
+```HTTPS
+git clone https://github.com/MateuszJakubczyk/MultiCalc.git
+```SSH
+git clone git@github.com:MateuszJakubczyk/MultiCalc.git
 
-### Dependencies
+### 2. Install dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+Navigate to the project directory and install any required dependencies. (If your app is written in a specific language, add details for that language’s package manager, e.g., `npm install` for JavaScript or `pip install -r requirements.txt` for Python.)
 
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
+```bash
+cd MultiCalc
+# For example:
+npm install  # if it's a Node.js app
 ```
 
-## Help
+### 3. Run the application
 
-Any advise for common problems or issues.
+Start the app with the following command:
+
+```bash
+# Example for a Node.js app
+npm start
 ```
-command to run if program contains helper info
-```
 
-## Authors
+Or follow the specific command needed based on your project setup.
 
-Contributors names and contact info
+## Usage
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Once the application is running, simply input your desired calculations in the provided interface. The app supports a variety of functions that can be used in any combination.
 
-## Version History
+## Contributing
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
+Feel free to fork the project, submit issues, and contribute improvements. Please adhere to the following guidelines for submitting pull requests:
+
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a new pull request.
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+- Thanks to [name or project] for their contributions.
+- Inspiration from [another app or concept].
+
+---
+
+Feel free to replace placeholders (like installation instructions and features) with specifics about how your app works and any additional tools or libraries it depends on! If you have any specific features or instructions to include, let me know, and I can update it for you.
