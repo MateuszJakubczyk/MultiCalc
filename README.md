@@ -13,18 +13,18 @@ Whether you need simple arithmetic or more advanced calculations, MultiCalc is d
 
 To use MultiCalc, clone the repository and set up the app on your local machine.
 
+```HTTPS
 ### 1. Clone the repository
 
-```HTTPS
 git clone https://github.com/MateuszJakubczyk/MultiCalc.git
 
 ### 2. Install dependencies
 
 Navigate to the project directory and install any required dependencies. (If your app is written in a specific language, add details for that language’s package manager, e.g., `npm install` for JavaScript or `pip install -r requirements.txt` for Python.)
 
-```HTTPS
-cd MultiCalc
 # For example:
+
+cd MultiCalc
 npm install  # if it's a Node.js app
 ```
 
