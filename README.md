@@ -13,7 +13,7 @@ Whether you need simple arithmetic or more advanced calculations, MultiCalc is d
 
 To use MultiCalc, clone the repository and set up the app on your local machine.
 
-```HTTPS
+```bash
 ### 1. Clone the repository
 
 git clone https://github.com/MateuszJakubczyk/MultiCalc.git
@@ -33,11 +33,8 @@ npm install  # if it's a Node.js app
 Start the app with the following command:
 
 ```bash
-# Example for a Node.js app
-npm start
+python .\calculator.py
 ```
-
-Or follow the specific command needed based on your project setup.
 
 ## Usage
 
