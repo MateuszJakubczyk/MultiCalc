@@ -15,18 +15,14 @@ To use MultiCalc, clone the repository and set up the app on your local machine.
 
 ### 1. Clone the repository
 
-```bash
-git clone git@github.com:MateuszJakubczyk/MultiCalc.git
 ```HTTPS
 git clone https://github.com/MateuszJakubczyk/MultiCalc.git
-```SSH
-git clone git@github.com:MateuszJakubczyk/MultiCalc.git
 
 ### 2. Install dependencies
 
 Navigate to the project directory and install any required dependencies. (If your app is written in a specific language, add details for that language’s package manager, e.g., `npm install` for JavaScript or `pip install -r requirements.txt` for Python.)
 
-```bash
+```HTTPS
 cd MultiCalc
 # For example:
 npm install  # if it's a Node.js app
