@@ -40,7 +40,7 @@ python .\calculator.py
 
 ## Usage
 
-Once the application is running, simply input your desired calculations in the provided interface. The app supports a variety of functions that can be used in any combination.
+Once the application is running, simply input your values in the provided interface. The app supports a variety of functions that can be used in any combination.
 
 ## Contributing
 
@@ -54,13 +54,4 @@ Feel free to fork the project, submit issues, and contribute improvements. Pleas
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
-## Acknowledgments
-
-- Thanks to [name or project] for their contributions.
-- Inspiration from [another app or concept].
-
----
-
-Feel free to replace placeholders (like installation instructions and features) with specifics about how your app works and any additional tools or libraries it depends on! If you have any specific features or instructions to include, let me know, and I can update it for you.
+Distributed under the MIT License. See `MIT` for more information.
