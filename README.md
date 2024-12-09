@@ -20,7 +20,9 @@ git clone https://github.com/MateuszJakubczyk/MultiCalc.git
 
 ### 2. Install dependencies
 
-Navigate to the project directory and install any required dependencies. (If your app is written in a specific language, add details for that language’s package manager, e.g., `npm install` for JavaScript or `pip install -r requirements.txt` for Python.)
+Navigate to the project directory and install any required dependencies.
+(If your app is written in a specific language, add details for that language’s package manager,
+e.g., `npm install` for JavaScript or `pip install -r requirements.txt` for Python.)
 
 # For example:
 
